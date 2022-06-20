@@ -81,6 +81,11 @@ const HECO: Currency = {
   symbol: 'HT',
   decimals: 18,
 }
+const KLAY: Currency = {
+  name: 'KLAY',
+  symbol: 'KLAY',
+  decimals: 18,
+}
 
 const CHAIN_INFORMATION = new Map<number, ChainInformation | ChainType>([
   [
@@ -456,6 +461,30 @@ const CHAIN_INFORMATION = new Map<number, ChainInformation | ChainType>([
       shortName: 'HECO',
       explorerUrl: `https://hecoscan.xyz/`,
       testnet: false,
+    },
+  ],
+  [
+    8217,
+    {
+      id: 8217,
+      nativeCurrency: KLAY,
+      type: 'cypress',
+      fullName: 'Klaytn Mainnet',
+      shortName: 'Cypress',
+      explorerUrl: `https://klaytnfinder.io`,
+      testnet: false,
+    },
+  ],
+  [
+    1001,
+    {
+      id: 1001,
+      nativeCurrency: KLAY,
+      type: 'baobab',
+      fullName: 'Klaytn Testnet',
+      shortName: 'Baobab',
+      explorerUrl: `https://baobab.klaytnfinder.io`,
+      testnet: true,
     },
   ],
 ])
