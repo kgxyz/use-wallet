@@ -93,6 +93,15 @@ const PROVIDERS = new Map<string, Provider>(
         'your Ethereum wallet': 'your wallet',
       },
     },
+    {
+      id: 'kaikas',
+      name: 'Kaikas',
+      type: 'Desktop',
+      image: `${BASE_URL}/Metamask.png`,
+      strings: {
+        'your Klaytn wallet': 'Kaikas',
+      },
+    },
   ].map((provider) => [provider.id, provider])
 )
 
